@@ -1,7 +1,7 @@
 services:
-  portfolio:
+  portfolio_website:
     build: .
-    container_name: portfolio
+    container_name: portfolio_website
     restart: always
     env_file:
       - .env
@@ -12,14 +12,14 @@ services:
       - ./logs:/app/logs
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.portfolio.rule=Host(`${DOMAIN}`) || Host(`www.${DOMAIN}`)"
-      - "traefik.http.routers.portfolio.entrypoints=websecure"
-      - "traefik.http.routers.portfolio.tls.certresolver=le"
-      - "traefik.http.services.portfolio.loadbalancer.server.port=${PORT}"
-      - "traefik.http.middlewares.portfolio-hsts.headers.stsSeconds=31536000"
-      - "traefik.http.middlewares.portfolio-hsts.headers.stsIncludeSubdomains=true"
-      - "traefik.http.middlewares.portfolio-hsts.headers.stsPreload=true"
-      - "traefik.http.routers.portfolio.middlewares=portfolio-hsts@docker"
+      - "traefik.http.routers.portfolio_website.rule=Host(`${DOMAIN}`) || Host(`www.${DOMAIN}`)"
+      - "traefik.http.routers.portfolio_website.entrypoints=websecure"
+      - "traefik.http.routers.portfolio_website.tls.certresolver=le"
+      - "traefik.http.services.portfolio_website.loadbalancer.server.port=${PORT}"
+      - "traefik.http.middlewares.portfolio_website-hsts.headers.stsSeconds=31536000"
+      - "traefik.http.middlewares.portfolio_website-hsts.headers.stsIncludeSubdomains=true"
+      - "traefik.http.middlewares.portfolio_website-hsts.headers.stsPreload=true"
+      - "traefik.http.routers.portfolio_website.middlewares=portfolio_website-hsts@docker"
     networks:
       - web
     expose:

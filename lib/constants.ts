@@ -45,15 +45,15 @@ export const SUGGESTED_QUESTIONS = [
 
 export const PROJECTS = [
   {
-    name: "Project 1",
+    name: "Music Website",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letrasets Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "The official website of my solo music project, built entirely by me from start to finish: from concept, through implementation and content, to production deployment. The interface was created without UI component libraries: the guitar pick-shaped links are built in pure CSS, and scrolling between sections uses a custom animation. The main content is kept separate from the components and gathered in a single file, which makes it easy to edit. The site is responsive and, among other things, uses a separate background image on mobile devices.",
     codeLink: "https://github-link-1",
     liveLink: "https://page-link-1",
     screenSrc: "/images/placeholder.png",
   },
   {
-    name: "Project 2",
+    name: "Podatnik Website",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letrasets Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged.",
     codeLink: "https://github-link-2",
@@ -61,9 +61,9 @@ export const PROJECTS = [
     screenSrc: "/images/placeholder.png",
   },
   {
-    name: "Project 3",
+    name: "Wedding Website",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letrasets Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "A multilingual website created for my friends' wedding, with event details and practical information about Poland for guests from abroad. Its visual design is consistent with the printed wedding invitations, and the interface was created without UI component libraries. The site is available in English, German and Polish, opens with an animated intro and a live countdown to the ceremony, and loads the map only after a click to respect visitors' privacy. Names and personal details have been changed, and the photos come from https://pixabay.com (Pixabay Content License).",
     codeLink: "https://github-link-3",
     liveLink: "https://page-link-3",
     screenSrc: "/images/placeholder.png",
